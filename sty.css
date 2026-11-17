@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top, #5c1025, #080808 65%);
+
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 50px rgba(255, 0, 70, 0.25);
+}
+
+.heart {
+    font-size: 60px;
+
+    animation: latido 1.3s infinite;
+}
+
+.login-box h1 {
+    margin: 15px 0;
+
+    font-size: 32px;
+}
+
+.login-box p {
+    color: #ddd;
+
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 8px 0;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.login-box input::placeholder {
+    color: #bbb;
+}
+
+button {
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(45deg, #ff174f, #ff4f81);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 25px rgba(255, 40, 100, 0.6);
+}
+
+#error {
+    color: #ff5c7c;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.oculto {
+    display: none;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.85)),
+        radial-gradient(circle, #70122f, #080808 70%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.pequeno {
+    letter-spacing: 5px;
+
+    color: #ff6c91;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+
+    color: #ddd;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   HISTORIA
+========================= */
+
+.historia {
+    background: #0e0e0e;
+
+    text-align: center;
+}
+
+.historia > p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+.timeline {
+    max-width: 1000px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.momento {
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    transition: .3s;
+}
+
+.momento:hover {
+    transform: translateY(-10px);
+
+    border-color: #ff3d6e;
+}
+
+.momento span {
+    font-size: 40px;
+}
+
+.momento h3 {
+    margin: 20px 0 10px;
+
+    font-size: 22px;
+}
+
+.momento p {
+    color: #aaa;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOTOS
+========================= */
+
+.fotos {
+    text-align: center;
+
+    background:
+        linear-gradient(#0e0e0e, #180811);
+}
+
+.fotos > p {
+    color: #aaa;
+
+    margin-bottom: 40px;
+}
+
+.galeria {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.foto {
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #222;
+}
+
+.foto img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.foto:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   CARTA
+========================= */
+
+.carta {
+    background: #0b0b0b;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.carta-box {
+    max-width: 750px;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #101010
+        );
+
+    box-shadow:
+        0 0 50px rgba(255,0,70,.12);
+}
+
+.carta-box h2 {
+    color: #ff6c91;
+}
+
+.carta-box p {
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #ddd;
+
+    margin: 20px 0;
+}
+
+.firma {
+    text-align: right;
+
+    color: #ff668b !important;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROPUESTA
+========================= */
+
+.propuesta {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #731536,
+            #13070c 70%
+        );
+}
+
+.propuesta-box {
+    max-width: 750px;
+}
+
+.anillo {
+    font-size: 80px;
+
+    animation: flotar 2s infinite ease-in-out;
+}
+
+.propuesta h2 {
+    font-size: clamp(40px, 7vw, 70px);
+
+    margin: 20px 0;
+}
+
+.propuesta p {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #ddd;
+
+    margin-bottom: 25px;
+}
+
+.botones {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+#noBtn {
+    background: #333;
+}
+
+#respuesta {
+    margin-top: 30px;
+
+    font-size: 28px;
+
+    color: #ff6c91;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #050505;
+}
+
+footer h2 {
+    color: #ff4777;
+}
+
+footer p {
+    color: #999;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes latido {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
+@keyframes flotar {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        height: 450px;
+    }
+
+    .login-box {
+        padding: 35px 20px;
+    }
+
+}
