@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para el amor de mi vida ❤️</title>
+
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <section id="login" class="login">
+
+        <div class="login-box">
+
+            <div class="heart">❤️</div>
+
+            <h1>Bienvenida, mi amor</h1>
+
+            <p>Este pequeño lugar fue creado especialmente para ti.</p>
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Tu nombre"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Nuestra contraseña"
+            >
+
+            <button onclick="entrar()">
+                Entrar a nuestro mundo ❤️
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGINA PRINCIPAL -->
+    <main id="contenido" class="oculto">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="pequeno">PARA LA PERSONA MÁS ESPECIAL</p>
+
+                <h1>
+                    Tú eres mi lugar favorito ❤️
+                </h1>
+
+                <p>
+                    No sé cómo explicarlo con palabras,
+                    pero contigo quiero vivir todos mis momentos.
+                </p>
+
+                <button onclick="irAPropuesta()">
+                    Tengo algo que preguntarte 💍
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- NUESTRA HISTORIA -->
+        <section class="historia">
+
+            <h2>Nuestra historia ❤️</h2>
+
+            <p>
+                Desde que llegaste a mi vida, muchas cosas cambiaron.
+                Cada momento contigo se convirtió en un recuerdo
+                que quiero guardar para siempre.
+            </p>
+
+            <div class="timeline">
+
+                <div class="momento">
+                    <span>❤️</span>
+                    <h3>Cuando nos conocimos</h3>
+                    <p>
+                        El comienzo de una historia que jamás imaginé vivir.
+                    </p>
+                </div>
+
+                <div class="momento">
+                    <span>🥰</span>
+                    <h3>Nuestros momentos</h3>
+                    <p>
+                        Cada risa, cada conversación y cada recuerdo.
+                    </p>
+                </div>
+
+                <div class="momento">
+                    <span>💍</span>
+                    <h3>Nuestro futuro</h3>
+                    <p>
+                        Todo lo que todavía nos falta vivir juntos.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOTOS -->
+        <section class="fotos">
+
+            <h2>Nuestros recuerdos 📸</h2>
+
+            <p>
+                Algunos de mis momentos favoritos son los que comparto contigo.
+            </p>
+
+            <div class="galeria">
+
+                <div class="foto">
+                    <img src="cris.jpg" alt="Nuestro recuerdo">
+                </div>
+
+                <div class="foto">
+                    <img src="cris2.jpg" alt="Nuestro recuerdo">
+                </div>
+
+                <div class="foto">
+                    <img src="cris3.jpg" alt="Nuestro recuerdo">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARTA -->
+        <section class="carta">
+
+            <div class="carta-box">
+
+                <h2>Una carta para ti 💌</h2>
+
+                <p>
+                    Mi amor, quizás no siempre encuentre las palabras
+                    perfectas para decirte todo lo que siento.
+                </p>
+
+                <p>
+                    Pero quiero que sepas que eres una persona
+                    demasiado importante para mí.
+                </p>
+
+                <p>
+                    Quiero seguir creando recuerdos contigo,
+                    reír contigo, apoyarte y estar a tu lado
+                    en cada etapa de nuestras vidas.
+                </p>
+
+                <p class="firma">
+                    Con todo mi amor ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROPUESTA -->
+        <section id="propuesta" class="propuesta">
+
+            <div class="propuesta-box">
+
+                <div class="anillo">💍</div>
+
+                <p>Y ahora sí...</p>
+
+                <h2>
+                    ¿Quieres casarte conmigo?
+                </h2>
+
+                <p>
+                    Quiero que seas parte de mi presente,
+                    de mi futuro y de todos los días que todavía
+                    nos quedan por vivir.
+                </p>
+
+                <div class="botones">
+
+                    <button onclick="aceptar()">
+                        SÍ, ACEPTO ❤️
+                    </button>
+
+                    <button id="noBtn" onclick="noAceptar()">
+                        NO 😢
+                    </button>
+
+                </div>
+
+                <p id="respuesta"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <footer>
+
+            <h2>Te amo ❤️</h2>
+
+            <p>
+                Esta página es solamente una pequeña forma
+                de decirte lo mucho que significas para mí.
+            </p>
+
+            <p>
+                ❤️ Siempre tú ❤️
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
